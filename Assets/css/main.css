@@ -143,7 +143,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 50px;
   margin-right: 8px;
 }
 
@@ -152,6 +152,7 @@ h6 {
   margin: 0;
   font-weight: 600;
   color: var(--heading-color);
+  font-family: Noto serif, sans-serif;
 }
 
 .header .btn-getstarted,
@@ -467,6 +468,7 @@ font-size:14px;
 .footer-logo{
 color:#fff;
 font-weight:700;
+font-family: Noto serif, sans-serif;
 }
 
 .footer-tagline{
@@ -2453,7 +2455,7 @@ section,
 .team .member-card .member-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
