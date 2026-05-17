@@ -350,10 +350,10 @@ h6 {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    inset: 60px 0px 0px 0px;
     padding: 10px 0;
     margin: 0;
-    border-radius: 6px;
+    border-radius: 0px;
     background-color: var(--nav-mobile-background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
