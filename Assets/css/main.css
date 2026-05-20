@@ -10,7 +10,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #52413a; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #31221c; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #d98400; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #d29c11; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -18,11 +18,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #52413a;  /* The default color of the main navmenu links */
-  --nav-hover-color: #d98400; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #d29c11; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #52413a; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #d98400; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #d29c11; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -541,7 +541,7 @@ color:#bcbcbc;
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -691,12 +691,16 @@ section,
 }
 
 .hero .hero-tag i {
-  color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#D4AF37 35%,#F4D06F 50%,#D4AF37 65%,#8B6A16 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
   margin-right: 0.5rem;
 }
 
 .hero .hero-tag span {
-  color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#D4AF37 35%,#F4D06F 50%,#D4AF37 65%,#8B6A16 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
   font-weight: 600;
 }
 
@@ -717,6 +721,7 @@ section,
 }
 
 .hero .lead {
+  font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 1.5rem;
 }
@@ -745,7 +750,7 @@ section,
 }
 
 .hero .hero-cta .btn-primary {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   border-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 0.75rem 1.5rem;
@@ -837,7 +842,9 @@ section,
 .hero .hero-image-wrapper .stat-card .stat-icon {
   align-self: flex-end;
   font-size: 1.25rem;
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  background: linear-gradient(135deg,#8B6A16 0%,#D4AF37 35%,#F4D06F 50%,#D4AF37 65%,#8B6A16 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 @media (max-width: 575px) {
@@ -1003,7 +1010,7 @@ section,
 }
 
 .about .about-content-box .btn-discover {
-  background: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   color: var(--contrast-color);
   border: none;
   border-radius: 30px;
@@ -1084,7 +1091,7 @@ section,
   bottom: 30px;
   width: 120px;
   height: 120px;
-  background: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -1207,7 +1214,7 @@ section,
 .professional-progress .progress-bar{
   height:100%;
   border-radius:50px;
-  background:linear-gradient(90deg,#ff6a00,#ff2d55);
+  background:linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   position:relative;
   animation:progressLoad 2s ease forwards;
 }
@@ -1220,15 +1227,7 @@ section,
   top:0;
   left:0;
   width:100%;
-  height:100%;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255,255,255,0.2),
-    rgba(255,255,255,0.2) 10px,
-    transparent 10px,
-    transparent 20px
-  );
-  animation:moveStripes 2s linear infinite;
+  height:100%;  
 }
 
 /* width controls */
@@ -1512,7 +1511,7 @@ section,
   line-height: 65px;
   margin: 0 auto;
   font-size: 48px;
-  color: var(--heading-color);
+  color: #53a6a5;
   transition: all 0.3s ease;
 }
 
@@ -1917,7 +1916,6 @@ section,
 
 .how-we-work .step-icon i {
   font-size: 32px;
-  color: var(--accent-color);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -1939,7 +1937,6 @@ section,
   font-family: var(--heading-font);
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--accent-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -2048,7 +2045,7 @@ section,
 }
 
 .faq .faq-tabs .nav-pills .nav-link.active {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   color: var(--contrast-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -2166,7 +2163,7 @@ section,
 }
 
 .faq .faq-cta .btn-primary {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   border-color: var(--accent-color);
   padding: 10px 25px;
   border-radius: 50px;
@@ -2245,7 +2242,7 @@ section,
 
 .call-to-action .cta-buttons .btn-primary {
   padding: 0.8rem 2rem;
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   color: var(--contrast-color);
   border-radius: 50px;
   font-weight: 600;
@@ -2403,8 +2400,8 @@ section,
   height: 50px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #53a6a5;
-  color: #53a6a5;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -2414,7 +2411,7 @@ section,
 }
 
 .team .team-intro .team-navigation button:hover {
-  background-color: #53a6a5;
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   color: var(--contrast-color);
 }
 
@@ -2712,7 +2709,7 @@ section,
 }
 
 .contact .contact-form-container .php-email-form button {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   color: var(--contrast-color);
   border: none;
   padding: 12px 28px;
@@ -3260,6 +3257,12 @@ section,
 }
 
 .btn-start:hover {
-  background: var(--accent-color);
+  background: linear-gradient(135deg,#8B6A16 0%,#C9971A 25%,#F4D06F 50%,#D4AF37 75%,#8B6A16 100%);
   color: #fff;
+}
+
+.gold-text{
+    background: linear-gradient(135deg,#8B6A16 0%,#D4AF37 35%,#F4D06F 50%,#D4AF37 65%,#8B6A16 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
